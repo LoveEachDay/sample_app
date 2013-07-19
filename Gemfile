@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
-gem 'bootstrap-sass', '2.0.0'
+gem 'bootstrap-sass', '~> 2.3.2.0'
 gem 'bcrypt-ruby'
 
 # Bundle edge Rails instead:
@@ -28,10 +28,12 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
+gem 'jquery-rails', '~>3.0.4'
 
 group :test do
   gem 'factory_girl_rails'
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
 end
 
 # To use ActiveModel has_secure_password
